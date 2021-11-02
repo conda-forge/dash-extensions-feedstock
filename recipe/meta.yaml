@@ -21,6 +21,7 @@ requirements:
     - python >=3.6
   run:
     - dash
+    - jsbeautifier
     - flask-caching
     - more-itertools
     - python >=3.6
