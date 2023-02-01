@@ -1,5 +1,5 @@
 {% set name = "dash-extensions" %}
-{% set version = "0.1.9" %}
+{% set version = "0.1.10" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dash_extensions-{{ version }}.tar.gz
-  sha256: cc21c76657bfa4dfbbf7951cf075ad527ad3751a714eeb3b8e652b300b8217b9
+  sha256: 0e5a6ab4e8311774b757293e882de0f661a4ac557b2e37d3c87997025186da72
 
 build:
   number: 0
