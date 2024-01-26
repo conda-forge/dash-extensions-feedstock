@@ -27,7 +27,7 @@ requirements:
     - flask-caching =2.0.2
     - jsbeautifier >=1.14.3,<2
     - more-itertools >=9.0.0,<10.0.0
-    - dataclass-wizard >=0.22.2,<0.23.0
+    - dataclass-wizard >=0.22.0,<0.23.0
   run_constrained:
     - dash-mantine-components >=0.11.1,<0.12.0
 
