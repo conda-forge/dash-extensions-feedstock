@@ -3,7 +3,7 @@ About dash-extensions-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dash-extensions-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/thedirtyfew/dash-extensions/
+Home: https://dash-extensions.com
 
 Package license: MIT
 
@@ -143,6 +143,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@0xbe7a](https://github.com/0xbe7a/)
 * [@fhoehle](https://github.com/fhoehle/)
 * [@mitchellwood](https://github.com/mitchellwood/)
 * [@whophil](https://github.com/whophil/)
