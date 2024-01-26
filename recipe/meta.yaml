@@ -1,5 +1,5 @@
 {% set name = "dash-extensions" %}
-{% set version = "1.0.7" %}
+{% set version = "1.0.8" %}
 
 
 package:
@@ -8,25 +8,28 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dash_extensions-{{ version }}.tar.gz
-  sha256: 46c4ec7c7d3b42db63032005f7d258435bc0092d0fec6f6ce000be68befeb102
+  sha256: a461bdc3b3c300cdb525cb264b201691d086b7e19355db8b458bf9e23dbda259
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8,<4.0
     - pip
     - poetry-core >=1
 
   run:
-    - python >=3.7
-    - dash >=2.7
-    - flask-caching =2.0.1
+    - python >=3.8,<4.0
+    - dash >=2.9.3
+    - flask-caching =2.0.2
     - jsbeautifier >=1.14.3,<2
-    - more-itertools >=8.12.0,<9
+    - more-itertools >=9.0.0,<10.0.0
+    - dataclass-wizard >=0.22.2,<0.23.0
+  run_constrained:
+    - dash-mantine-components >=0.11.1,<0.12.0
 
 
 test:
@@ -39,7 +42,7 @@ test:
   #   - pip
 
 about:
-  home: https://github.com/thedirtyfew/dash-extensions/
+  home: https://dash-extensions.com
   summary: Extensions for Plotly Dash.
   license: MIT
   license_file: LICENSE
@@ -49,3 +52,4 @@ extra:
     - whophil
     - mitchellwood
     - fhoehle
+    - '0xbe7a'
