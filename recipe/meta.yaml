@@ -1,5 +1,5 @@
 {% set name = "dash-extensions" %}
-{% set version = "2.0.3" %}
+{% set version = "2.0.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dash_extensions-{{ version }}.tar.gz
-  sha256: 5771d293aa07160a5118d3a69d78b5fd6a574c842d3435248c23636a23ae68a0
+  sha256: fdab16f15349422c28e1fe3bf39f064f96fc54eb1dcd8d02440a45a63d8b1a6a
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - pip
     - setuptools
   run:
-    - python >={{ python_min }},<4.0
+    - python >={{ python_min }}
     - dash >=3.0.0
     - more-itertools >=10.6.0
     - jsbeautifier >=1.15.4
