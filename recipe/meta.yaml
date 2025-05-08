@@ -19,7 +19,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - poetry-core >=1
+    - setuptools
   run:
     - python >={{ python_min }},<4.0
     - dash >=3.0.0
@@ -28,19 +28,16 @@ requirements:
     - flask-caching >=2.3.1
     - dataclass-wizard >=0.35.0
     - pydantic >=2.10.6
-  run_constrained:
-    - dash-mantine-components >=0.14.11
 
 test:
   requires:
     - python {{ python_min }}
   imports:
     - dash_extensions
-  # failing due to dash missing dash-core-components, dash-html-components and dash-table 
-  # commands:
-  #   - pip check
-  # requires:
-  #   - pip
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://dash-extensions.com
